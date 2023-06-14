@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+      }
+      .gray-color {
+        color: rgba(127, 127, 127, 1);
+      }
+      .container {
+        padding: 0 40px;
+      }
+      .mb-1 {
+        margin-bottom: 16px;
+      }
+      .mt-40 {
+        margin-top: 40px;
+      }
+      .fw-400 {
+        font-weight: 400;
+      }
+      .fw-500 {
+        font-weight: 500;
+      }
+      .fw-600 {
+        font-weight: 600;
+      }
+      .header {
+        background-color: rgba(243, 230, 216, 1);
+        font-size: 32px;
+        padding: 11px;
+        text-align: center;
+      }
+      .heading-1 {
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba(0, 1, 31, 1);
+      }
+
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        border: 0.5px solid #7e7e7e;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 24px;
+      }
+      .card {
+        background: #ffffff;
+        box-shadow: 0px 2px 10px rgba(33, 6, 2, 0.08);
+        border-radius: 16px;
+        padding: 32px;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .justify-between {
+        justify-content: space-between;
+      }
+      .flex p:first-child {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start header  -->
+    <header class="header">
+      <div>
+        <p>Thank you for your order</p>
+      </div>
+    </header>
+    <!-- end header  -->
+
+    <!-- start intro section -->
+    <section class="container mt-40">
+      <div class="flex justify-between">
+        <div>
+          <p class="gray-color mb-1 fw-600">Hi , nada</p>
+          <p class="gray-color mb-1 fw-600">
+            Just to let you know that we have received your order #7980,
+            <br />
+            and it’s now being processed
+          </p>
+          <p class="gray-color mb-1 fw-600">
+            Expected you to receive this package by 7 April ,2023
+          </p>
+        </div>
+        <div style="align-self: end;">
+          <img src="./parcode.png" />
+        </div>
+      </div>
+    </section>
+    <!-- end intro section -->
+
+    <!-- start table section -->
+    <section class="container">
+      <h1 class="heading-1 mb-1 mt-40">
+        Order #7980 <sub class="gray-color">3 April , 2023</sub>
+      </h1>
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>small goat</td>
+          <td>2</td>
+          <td>150.00 $</td>
+        </tr>
+        <tr>
+          <td>small goat</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Sub total</td>
+          <td colspan="2">Francisco Chang</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td colspan="2">150.00 $</td>
+        </tr>
+        <tr>
+          <td>Payment Method</td>
+          <td colspan="2">150.00 $</td>
+        </tr>
+        <tr>
+          <td>total</td>
+          <td colspan="2">150.00 $</td>
+        </tr>
+      </table>
+    </section>
+    <!-- end table section -->
+
+    <!-- start shipping  -->
+    <section class="container mb-1">
+      <h1 class="heading-1 mb-1 mt-40">Shipping address</h1>
+      <div class="card">
+        <div class="mb-1">
+          <div class="flex gray-color">
+            <p class="fw-500">Order date</p>
+            <p class="fw-600">11/6/2023</p>
+          </div>
+        </div>
+        <div class="mb-1">
+          <div class="flex gray-color">
+            <p class="fw-500">Order address</p>
+            <p class="fw-600">sfs kjsfkjg osjfkmll jngkvniijnji</p>
+          </div>
+        </div>
+        <div class="mb-1">
+          <div class="flex gray-color">
+            <p class="fw-500">Mobile number</p>
+            <p class="fw-600">010218215</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end shipping  -->
+
+    <section class="container">
+      <p class="gray-color mb-1 fw-600">
+        <img src="./link.png"/>
+        thank you for choosing
+        <a
+          href="https://floridahalalmeat.com/"
+          style="color: rgba(155, 29, 8, 1); font-weight: 600"
+          >us !</a
+        >
+      </p>
+      <p class="gray-color mb-1 fw-400">
+        <img src="./phone.png"/>
+        Contact us on
+        <a
+          href="tel:+1815-428-7376"
+          style="
+            color: rgba(18, 18, 18, 1);
+            font-weight: 600;
+            text-decoration: none;
+          "
+          >+1 815-428-7376</a
+        >
+      </p>
+      <p class="gray-color mb-1 fw-400">
+        <img src="./location.png"/>
+        vist us at
+        <a
+          href="tel:+1815-428-7376"
+          style="
+            color: rgba(18, 18, 18, 1);
+            font-weight: 600;
+            text-decoration: none;
+          "
+          >105 South East Avenue, Papineau</a
+        >
+      </p>
+    </section>
+  </body>
+</html>
